@@ -1,4 +1,11 @@
-export function Greet(props){
-    return <h1> Hello {props.name} a.k.a {props.heroName}</h1>
+export function Greet(props) {
+    return (
+        <div>
+            <h1>
+                Hello {props.name} a.k.a {props.heroName}
+            </h1>
+            {props.children}
+        </div>
+
+    )
 }
- 
