@@ -5,8 +5,8 @@ export const PostForm = () => {
     const [userId, setUserId] = useState('')
     const [title, setTitle] = useState('')
     const [body, setBody] = useState('')
-    const submitHandler = (event) => {
-        event.preventDefault()
+    const submitHandler = (event) => {        
+        event.preventDefault()  //Prevents refresh
         fetch('https://jsonplaceholder.typicode.com/posts', {
             method: 'POST',
             body: JSON.stringify({
