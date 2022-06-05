@@ -1,5 +1,5 @@
 import './App.css';
-import './appStyles.css' 
+import './appStyles.css'
 import { Form } from './components/Form';
 
 import styles from './appStyles.module.css'
@@ -11,6 +11,8 @@ import { UserGreeting } from './components/UserGreeting';
 import { NameList } from './components/NameList';
 import { Stylesheet } from './components/Stylesheet';
 import { Inline } from './components/Inline';
+import { PostList } from './components/PostList';
+import { PostForm } from './components/PostForm';
 
 
 
@@ -32,8 +34,12 @@ function App() {
 			<Stylesheet/>
 			<Inline/>
 			<h1 className='error'>Error</h1>
-			<h1 className={styles.success}>Success</h1> */}
-			<Form />
+			<h1 className={styles.success}>Success</h1> 
+			<Form />*/}
+			<PostForm />
+			<PostList />
+
+
 		</div>
 	);
 }
